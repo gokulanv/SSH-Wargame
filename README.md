@@ -69,6 +69,18 @@ UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 ssh bandit.labs.overthewire.org -p 2220 -l bandit10
 truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 
+cat data.txt | base64 decode
+
+## Level 11
+ssh bandit.labs.overthewire.org -p 2220 -l bandit11
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+cat data.txt | tr '[a-zA-Z]' '[n-za-mN-ZA-M]' 
+
+## Level 12
+ssh bandit.labs.overthewire.org -p 2220 -l bandit12
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
 
 
 
