@@ -81,21 +81,60 @@ cat data.txt | tr '[a-zA-Z]' '[n-za-mN-ZA-M]'
 ssh bandit.labs.overthewire.org -p 2220 -l bandit12
 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
+cat data.txt | xxd -r > data
+file data
+mv data data2.gz
+gzip -d data2.gz
+file data
+file data2
+mv data2 data2.bz
+bzip2 -d data2.bz
+file data2
+mv data2 data2.gz
+gzip -d data2.gz
+file data2
+tar -xvf data2
+file data5.bin
+tar -xvf data5.bin
+file data6.bin
+mv data6.bin data6.bz
+bzip2 -d data6.bz
+file data6
+tar -xvf data6
+file data8.bin
+mv data8.bin data8.gz
+gzip -d data8.gz
+cat data8
+
+>> The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
 
+## Level 13
+ssh bandit.labs.overthewire.org -p 2220 -l bandit13
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+ssh -i sshkey.private bandit14@localhost
+
+## Level 14
+cat /etc/bandit_pass/bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+nc localhost 30000
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+## Level 15
+ssh bandit.labs.overthewire.org -p 2220 -l bandit15
+Level 15 Password: BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" | openssl s_client -connect localhost:30001 -ign_eof
+
+## Level 16 
+ssh bandit.labs.overthewire.org -p 2220 -l bandit16
+cluFn7wTiGryunymYOu4RcffSxQluehd
 
 
-
-
-
-
-
-
-
-
-
-
-
+## WECHALL Credentials
+export WECHALLUSER="gvikashb";export WECHALLTOKEN="23D12-4DFF8-8C0D4-18F93-BA4AD-AFC9B";
 
 
 
